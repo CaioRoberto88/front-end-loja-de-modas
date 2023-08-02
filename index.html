@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+  <!-- Script Bootstrap 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"
+    defer></script>
+  <!-- Icones Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Principal</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-gradient">
+    <div class="container">
+      <a class="nav-logo me-3" href="index.html"><img class="navbar-brand w-25" src="./img/logo.svg" alt="logo marca" />
+        Loja de Roupas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end align-content-end">
+        <ul class="navbar-nav">
+          <li class="navbar-item">
+            <a class="nav-link me-3" href="#">Principal</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link me-3" href="#caterorias">Mulher</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link me-3" href="#caterorias">Homem</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link me-3" href="#sobre">Sobre</a>
+          </li>
+          <li class="navbar-item me-3">
+            <a class="nav-link me-3 mb-3" href="#contato">Contato</a>
+          </li>
+          <!-- INICIO CARRINHO -->
+          <li class="nav-item position-relative">
+            <a href="#" class="" data-bs-toggle="offcanvas" data-bs-target="#carrinho-compras"><i
+                class="bi-cart fs-4"></i><b class="valor-total-carrinho-site text-warning"> R$0,00</b></a>
+            <span class="notificacao-bag" id="numero-de-produtos">
+              <p class="qtd text-white">0</p>
+            </span>
+          </li>
+          <!-- FIM CARRINHO -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- INICIO DO CORPO DO CARRINHO -->
+  <div class="offcanvas offcanvas-end" id="carrinho-compras" tabindex="-1"
+    style="--bs-offcanvas-width: 600px; font-size: 16px">
+    <div class="offcanvas-header">
+      <h6 class="carrinho-titulo">
+        <span><img class="w-25" src="./img/logo.svg" alt="logo" /> Loja de
+          Roupas</span>
+      </h6>
+      <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <table class="table text-start text-white">
+        <thead>
+          <th>Produto</th>
+          <th>Quantidade</th>
+          <th>Valor</th>
+          <th>Remove</th>
+        </thead>
+        <tbody class="tbody-carrinho"></tbody>
+        <tfoot class="tfoot-carrinho">
+          <tr class="text-start">
+            <th class="border-0">Valor</th>
+            <th class="border-0">Total R$</th>
+            <td class="border-0 text-center valor-total-carrinho">R$ 0,00</td>
+            <th class="border-0"></th>
+          </tr>
+          <tr>
+            <td class="border-0">
+              <button class="btn btn-success btn-finaliza-compra mt-3">
+                Finalizar a compra
+              </button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+  <!-- FIM DO CORPO DO CARRINHO -->
+  <header>
+    <div class="container img-top">
+      <h1 class="titulo-img-top">Loja de moda fashion</h1>
+      <p class="sub-titulo-img-top">Coleções Extraordinárias</p>
+    </div>
+  </header>
+  <main class="bg-categoria" id="caterorias">
+    <div class="container text-center">
+      <h2 class="titulo-categoria py-5">Catergorias</h2>
+      <div class="row">
+        <div class="col-lg-3 col-md-5 col-6 card-1" data-aos="fade-right">
+          <div class="card">
+            <div class="card-body">
+              <a href="./mulher.html">
+                <img class="card-img" src="./img/categorias/mulher-categoria.jpg" alt="mulher" /></a>
+              <h2 class="cateroria-feminino">Feminino</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-5 col-6 card-2" data-aos="fade-left">
+          <div class="card">
+            <div class="card-body">
+              <a href="./homem.html"><img class="card-img" src="./img/categorias/homem-categoria.jpg" alt="homem" /></a>
+              <h2 class="cateroria-masculino">Masculino</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section class="bg-novidades sessao-novidades py-5">
+    <div class="container">
+      <h2 class="titulo-novidades py-5">Novidades</h2>
+      <div class="row gap-lg-0 gap-5">
+        <div class="col-lg-3 col-md-4 col-12 m-lg-0 m-auto">
+          <div class="card shadow shadow-lg">
+            <img class="card-img" src="./img/novidades/mulher/mulher-2.jpg" alt="Descrição da imagem" />
+            <div class="card-header">
+              <p class="card-titulo text-danger">Oferta</p>
+              <button type="button" class="card-link fw-semibold btn add-carrinho">
+                Adicionar ao carrinho
+              </button>
+            </div>
+            <div class="card-footer">
+              <p class="card-produto">Vestido Longo Branco</p>
+              <p class="text-warning card-preco">R$ 639,99</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 m-lg-0 m-auto">
+          <div class="card shadow shadow-lg">
+            <img class="card-img" src="./img/novidades/homem/homem-1.jpg" alt="Descrição da imagem" />
+            <div class="card-header">
+              <p class="card-titulo text-warning">Novo</p>
+              <button type="button" class="card-link fw-semibold btn add-carrinho">
+                Adicionar ao carrinho
+              </button>
+            </div>
+            <div class="card-footer">
+              <p class="card-produto">Short Jeans Azul</p>
+              <p class="text-warning card-preco">R$ 149,90</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 m-lg-0 m-auto">
+          <div class="card shadow shadow-lg">
+            <img class="card-img" src="./img/novidades/mulher/mulher-3.jpg" alt="Descrição da imagem" />
+            <div class="card-header">
+              <p class="card-titulo text-warning">Novo</p>
+              <button type="button" class="card-link fw-semibold btn add-carrinho">
+                Adicionar ao carrinho
+              </button>
+            </div>
+            <div class="card-footer">
+              <p class="card-produto">Saia Longa Amarela</p>
+              <p class="text-warning card-preco">R$ 229,79</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 m-lg-0 m-auto">
+          <div class="card shadow shadow-lg">
+            <img class="card-img" src="./img/novidades/homem/homem-4.jpg" alt="Descrição da imagem" />
+            <div class="card-header">
+              <p class="card-titulo text-danger">Oferta</p>
+              <button type="button" class="card-link fw-semibold btn add-carrinho">
+                Adicionar ao carrinho
+              </button>
+            </div>
+            <div class="card-footer">
+              <p class="card-produto">Calça Bege</p>
+              <p class="text-warning card-preco">R$ 269,98</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-sobre-nos shadow shadow-lg py-5" id="sobre">
+    <div class="container">
+      <h2 class="titulo-sobre py-5">Sobre nós</h2>
+      <div class="row">
+        <div class="col-lg-6 col-12" data-aos="fade-right">
+          <p class="img-sobre-descricao shadow shadow-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolore
+            rerum deleniti veritatis labore voluptate atque, quas, repellat
+            nemo maiores enim commodi ducimus modi in sed aliquam quaerat,
+            perspiciatis doloremque praesentium quia nisi consectetur
+            molestias accusantium. Architecto, iste? Molestias enim totam
+            explicabo asperiores rem hic molestiae facilis aut ullam! Porro
+            libero obcaecati maxime, aut, natus voluptates sequi repellendus
+            repudiandae provident ducimus accusamus praesentium nam omnis
+            atque minima. Sit assumenda suscipit in ad, dignissimos velit
+            iusto nihil ab sunt voluptates accusamus laborum nulla harum
+            deleniti dolorum. Nihil, odio cum dolorum labore est mollitia et
+            obcaecati nam, quaerat fuga itaque nisi repudiandae! Commodi
+            accusamus dolorem odio illo harum reiciendis iste, recusandae
+            dolor quia excepturi eaque alias itaque tempora ullam nulla
+            aliquam necessitatibus.
+          </p>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="img-sobre img-fluid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-contato" id="contato">
+    <div class="container">
+      <h2 class="titulo-contato pt-5">Contato</h2>
+      <div class="row">
+        <div class="col-lg-6 text-white sessao-contato my-lg-0 my-5">
+          <p>
+            <a href="https://wa.me/5527999999999?text=Olá%20tenho%20interesse%20em%20comprar%20alguns%20produtos"
+              class="telefone-contato">(27) 99999-9999 <i class="bi bi-whatsapp"></i></a>
+          </p>
+          <a href="mailto:LojaRoupasMultimarcas@gmail.com?subject=Assunto do email"><i
+              class="bi bi-mailbox me-2"></i>LojaRoupasMultimarcas@gmail.com</a>
+          <h2 class="titulo-redes-sociais mt-5">Nossas Redes Sociais</h2>
+          <div class="redes-sociais-contato">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="mx-3 bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="mx-3 bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <form action="##" class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-6">
+                <label class="form-label" for="nome"></label>
+                <input class="form-control shadow-none" type="text" name="nome" id="nome" placeholder="Nome" required />
+                <span class="invalid-feedback">Preencha com o seu nome</span>
+              </div>
+              <div class="col-6">
+                <label class="form-label" for="tel"></label>
+                <input class="form-control shadow-none" type="tel" name="tel" id="tel" placeholder="Telefone"
+                  required />
+                <span class="invalid-feedback">Preencha com o seu número de telefone</span>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="email"></label>
+                <input class="form-control shadow-none" type="email" name="email" id="email" placeholder="E-mail"
+                  required />
+                <span class="invalid-feedback">Preencha com o seu e-mail</span>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="mensagem"></label>
+                <textarea class="form-control" name="mensagem" id="mensagem" placeholder="Mensagem" required></textarea>
+                <span class="invalid-feedback">Preencha com a sua mensagem</span>
+              </div>
+            </div>
+            <button class="btn btn-contato my-5" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="map-contato" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+      <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+      <script>
+        (function () {
+          var setting = {
+            height: 625,
+            width: 3000,
+            zoom: 14,
+            queryString: "Serra, Espírito Santo, Brasil",
+            place_id: "ChIJrzZblqMfuAARCC7dERHZHFI",
+            satellite: false,
+            centerCoord: [-20.131184826807104, -40.30938500834179],
+            cid: "0x521cd91111dd2e08",
+            lang: "pt",
+            cityUrl: "/portugal/serra-97317",
+            cityAnchorText: "",
+            id: "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+            embed_id: "908025",
+          };
+          var d = document;
+          var s = d.createElement("script");
+          s.src = "https://1map.com/js/script-for-user.js?embed_id=908025";
+          s.async = true;
+          s.onload = function (e) {
+            window.OneMap.initMap(setting);
+          };
+          var to = d.getElementsByTagName("script")[0];
+          to.parentNode.insertBefore(s, to);
+        })();
+      </script>
+      <a href="https://1map.com/pt/map-embed">1 Map</a>
+    </div>
+  </section>
+  <footer class="bg-footer text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <p>&copy;2023 Todos os direitos reservados</p>
+          <p>Loja de Roupas Multimarcas</p>
+          <p>Rua: Roupa Linda, Loja 12, Serra - ES</p>
+          <p>Tel: 27 99999-9999 CNPJ: 0000000000000</p>
+          <p><a href="#">Política de privacidade</a></p>
+        </div>
+        <div class="col-lg-6 col-10 my-lg-0 my-5">
+          <div class="redes-sociais-footer my-5">
+            <h2 class="mt-5 titulo-redes-sociais-footer fs-5">
+              Nossas Redes Sociais
+            </h2>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="mx-3 bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="mx-3 bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Smooth Scroll -->
+  <script src="./node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 500,
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,826 @@
+body {
+  letter-spacing: 0.3px;
+  font-size: helvetica;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* NAV LOGO */
+.nav-logo {
+  color: #fff;
+}
+
+/* EFEITO NAVBAR LINK  */
+
+ul li .nav-link {
+  font-size: 18px;
+  color: #fff;
+  transition: 0.3ms;
+}
+
+ul li .nav-link:hover {
+  color: #8559e9;
+  transition: 0.3ms;
+}
+
+/* EFEITO NAVBAR HOVER  */
+
+.nav-link:after {
+  content: "";
+  height: 0px;
+  width: 100%;
+  background-color: #643fde;
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover:after {
+  height: 4px;
+  width: 100%;
+}
+
+/* NAVBAR COR */
+.navbar {
+  background-color: #c58dff;
+}
+
+/* NOTIFICAÇÃO DA BAG QUANTIDADES DE PRODUTOS NO CARRINHO */
+
+.notificacao {
+  width: 20px;
+  height: 24px;
+  top: -8px;
+  left: auto;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #fff;
+  text-align: center;
+}
+
+.notificacao-bag {
+  width: 20px;
+  height: 24px;
+  top: -12px;
+  left: 10px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #643fde;
+  text-align: center;
+}
+
+/* OFFCANVAS */
+
+.offcanvas-header {
+  color: #fff;
+  background-color: #c58dff;
+}
+
+.offcanvas {
+  max-width: 500px;
+}
+.offcanvas-body {
+  background-color: #8559e9;
+}
+
+/* ADD CARRINHO PRODUTOS */
+
+.add-carrinho {
+  color: #8559e9;
+  background-color: #fcff39;
+  padding: 15px;
+}
+
+.add-carrinho:hover {
+  background-color: #c58dff;
+  color: #4424d3;
+}
+
+/* IMAGEM TOP */
+
+header {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/imagem-top.jpg");
+  background-attachment: fixed;
+}
+
+.img-top {
+  height: 80vh;
+}
+
+.titulo-img-top,
+.sub-titulo-img-top {
+  color: #643fde;
+  text-align: center;
+}
+
+.titulo-img-top {
+  font-size: 64px;
+  padding-top: 64px;
+  font-weight: 900;
+}
+
+.sub-titulo-img-top {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+/* CATEGORIAS */
+
+.titulo-categoria,
+.titulo-novidades {
+  color: #fff;
+  font-size: 36px;
+}
+
+.bg-categoria {
+  background-color: #8559e9;
+  padding: 50px 0;
+}
+
+main,
+section {
+  height: auto;
+}
+
+.bg-novidades {
+  background-color: #8559e9;
+  padding: 50px 0;
+}
+
+.sessao-novidades {
+  height: auto;
+}
+
+/* CARD CATEGORIAS */
+
+.cateroria-feminino,
+.cateroria-masculino {
+  font-size: 24px;
+  color: #fff;
+}
+
+.card-img {
+  border-radius: 0px;
+}
+
+.card-1 {
+  display: flex;
+  margin-left: auto;
+}
+.card-2 {
+  display: flex;
+  margin-right: auto;
+}
+.card {
+  padding: 0px;
+  border: 1px solid #4424d3;
+  transition: ease-in-out 0.2ms;
+  background-color: transparent;
+}
+.card:hover {
+  border: 1px solid #fff;
+}
+
+/* CARD NOVIDADES */
+
+.titulo-novidades {
+  text-align: center;
+}
+
+.card-header {
+  text-align: center;
+  background-color: #643fde;
+  color: #fefefe;
+  padding-top: 20px;
+  font-weight: 600;
+}
+
+.card-produto {
+  color: #fff;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.card-preco {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* SOBRE NÓS */
+
+.bg-sobre-nos {
+  background-color: #643fde;
+}
+
+.titulo-sobre,
+.titulo-contato {
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+}
+.img-sobre-descricao {
+  background-color: #4424d3;
+  color: #fefefe;
+  border-radius: 10px;
+  padding: 20px;
+}
+.img-sobre {
+  background-image: url("../img/imagem-sobre.jpg");
+  background-size: contain;
+  background-position: center;
+  border-radius: 10px;
+  height: 480px;
+  width: 480px;
+}
+
+/* CONTATO */
+
+.bg-contato {
+  background-color: #8559e9;
+}
+
+.titulo-contato {
+  color: #fff;
+}
+.endereco-contato {
+  margin-left: 35px;
+}
+
+.btn-contato {
+  color: #fff;
+  background-color: #c58dff;
+}
+.btn-contato:hover {
+  color: #c58dff;
+  background-color: #fff;
+}
+
+.form-control::placeholder {
+  color: #c58dff;
+}
+.form-control {
+  color: #c58dff;
+}
+
+/* REDES SOCIAIS */
+
+.redes-sociais-contato {
+  position: relative;
+  padding-left: 50px;
+}
+
+.redes-sociais-contato .bi {
+  color: #fff;
+  font-size: 24px;
+  transition: all 0.2ms;
+}
+
+.redes-sociais-contato .bi:hover {
+  font-size: 26px;
+  color: #c58dff;
+}
+
+/* FOOTER */
+
+.bg-footer {
+  background-color: #c58dff;
+}
+
+.nav-contato-footer {
+  color: #fff;
+  position: relative;
+}
+
+.nav-link-footer {
+  padding: 0 15px;
+  transition: all 0.2ms;
+}
+
+.nav-link-footer:hover {
+  color: #4424d3;
+}
+
+footer {
+  height: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* REDES SOCIAIS FOOTER */
+
+.redes-sociais-footer {
+  position: relative;
+  font-size: 18px;
+}
+
+.bi {
+  color: #fff;
+  transition: 0.3ms;
+}
+
+.bi:hover {
+  color: #8559e9;
+}
+
+/* PAGINA INDIVIDUAL */
+
+.filtro-largura {
+  width: 148px;
+}
+
+.filtro-preco-largura {
+  width: 170px;
+}
+
+.condicoes-filtro,
+.preco-filtro {
+  position: relative;
+  cursor: pointer;
+}
+
+.condicoes-filtro {
+  left: 25px;
+}
+.preco-filtro {
+  left: 35px;
+}
+
+.painel-novo {
+  font-size: 14px;
+}
+
+.filtro-linha {
+  position: relative;
+  top: 240px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 575px) {
+  body {
+    min-width: 365px;
+    max-width: 575px;
+  }
+
+  /* EFEITO NAVBAR  */
+
+  .nav-link:after {
+    content: "";
+    height: 0px;
+    width: 12%;
+    display: block;
+  }
+
+  .nav-link:hover:after {
+    height: 0px;
+    width: 12%;
+  }
+
+  /* OFFCANVAS */
+
+  .offcanvas {
+    max-width: 350px;
+  }
+
+  .offcanvas-header img {
+    height: 60px;
+  }
+
+  .offcanvas-header .carrinho-titulo {
+    font-size: 14px;
+  }
+
+  table {
+    font-size: 10px;  
+  }
+
+  .btn-finaliza-compra {
+    font-size: 10px;
+  }
+
+  /* SESSAO NOVIDADES */
+  .card-titulo,
+  .add-carrinho,
+  .card-produto {
+    font-size: 18px;
+  }
+
+  .add-carrinho {
+    padding: 30px;
+  }
+
+  .card-preco {
+    font-size: 24px;
+  }
+
+  /* SESSAO CONTATO E REDES SOCIAIS */
+
+  .sessao-contato,
+  .telefone-contato,
+  .titulo-redes-socias,
+  .redes-sociais-contato {
+    position: relative;
+  }
+
+  .sessao-contato {
+    text-align: center;
+  }
+
+  .telefone-contato {
+    right: 75px;
+  }
+
+  .bi-whatsapp {
+    color: #25d366;
+    font-size: 22px;
+    bottom: 5px;
+  }
+
+  .titulo-redes-socias {
+    left: 20px;
+  }
+  .redes-sociais-contato {
+    left: -25px;
+  }
+  .btn-contato {
+    width: 100%;
+  }
+
+  /* FOOTER */
+
+  .redes-sociais-footer {
+    position: relative;
+    font-size: 18px;
+    left: 40px;
+  }
+
+  /* PAGINA INDIVIDUAL */
+  .titulo-categoria-mulher,
+  .titulo-categoria-homem {
+    text-align: center;
+  }
+  
+  .filtro-preco-largura {
+    position: relative;
+    top: 80px;
+  }
+
+  .filtro-preco-homem {
+    top: 35px;
+  }
+}
+
+@media (min-width: 576px) {
+  /* EFEITO NAVBAR  */
+
+  .nav-link:after {
+    content: "";
+    height: 0px;
+    width: 12%;
+    display: block;
+  }
+
+  .nav-link:hover:after {
+    height: 0px;
+    width: 12%;
+  }
+
+   /* OFFCANVAS */
+
+  .offcanvas {
+    max-width: 350px;
+  }
+
+  table {
+    font-size: 10px;  
+  }
+
+  .btn-finaliza-compra {
+    font-size: 10px;
+  }
+
+  /* SESSAO NOVIDADES */
+  .add-carrinho {
+    padding: 20px;
+  }
+
+  /* SESSAO CONTATO E REDES SOCIAIS */
+
+  .sessao-contato,
+  .telefone-contato,
+  .titulo-redes-socias,
+  .redes-sociais-contato {
+    position: relative;
+  }
+
+  .sessao-contato {
+    text-align: center;
+  }
+
+  .telefone-contato {
+    right: 75px;
+  }
+
+  .bi-whatsapp {
+    color: #25d366;
+    font-size: 22px;
+    bottom: 5px;
+  }
+
+  .titulo-redes-socias {
+    left: 20px;
+  }
+  .redes-sociais-contato {
+    left: -25px;
+  }
+
+  .btn-contato {
+    width: 100%;
+  }
+
+  /* FOOTER */
+
+  .nav-contato-footer {
+    color: #fff;
+    position: relative;
+    left: 40px;
+  }
+
+  .redes-sociais-footer {
+    position: relative;
+    font-size: 18px;
+    left: 40px;
+  }
+
+  /* PAGINA INDIVIDUAL */
+
+  .titulo-categoria-mulher,
+  .titulo-categoria-homem {
+    text-align: center;
+  }
+
+  .filtro-preco-largura {
+    position: relative;
+    top: 80px;
+  }
+
+  .filtro-preco-homem {
+    top: 35px;
+  }
+
+  .card-titulo,
+  .card-link {
+    font-size: 24px;
+  }
+
+  .card-produto {
+    color: #fff;
+    font-size: 32px;
+    font-weight: lighter;
+  }
+
+  .card-preco {
+    font-size: 36px;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 768px) {
+  /* EFEITO NAVBAR  */
+
+  .nav-link:after {
+    content: "";
+    height: 0px;
+    width: 12%;
+    display: block;
+  }
+
+  .nav-link:hover:after {
+    height: 0px;
+    width: 12%;
+  }
+
+  /* SESSAO CONTATO E REDES SOCIAIS */
+
+  .sessao-contato,
+  .telefone-contato,
+  .bi-whatsapp,
+  .titulo-redes-socias,
+  .redes-sociais-contato {
+    position: relative;
+  }
+
+  .sessao-contato {
+    text-align: center;
+  }
+
+  .telefone-contato {
+    right: 75px;
+  }
+
+  .bi-whatsapp {
+    color: #25d366;
+    font-size: 22px;
+    bottom: 5px;
+  }
+
+  .titulo-redes-socias {
+    left: 20px;
+  }
+  .redes-sociais-contato {
+    left: -25px;
+  }
+
+  .btn-contato {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    padding: 10px;
+  }
+
+  /* FOOTER */
+
+  .nav-contato-footer {
+    color: #fff;
+    position: relative;
+    left: 140px;
+  }
+
+  .redes-sociais-footer {
+    position: relative;
+    font-size: 18px;
+    left: 70px;
+  }
+
+  /* PAGINA INDIVIDUAL */
+
+  .titulo-categoria-mulher,
+  .titulo-categoria-homem {
+    text-align: center;
+  }
+
+  .filtro-preco-largura {
+    position: relative;
+    top: 80px;
+  }
+
+  .filtro-preco-homem {
+    top: 35px;
+  }
+
+  .card-titulo,
+  .card-link {
+    font-size: 18px;
+  }
+
+  .card-produto {
+    color: #fff;
+    font-size: 18px;
+    font-weight: lighter;
+  }
+
+  .card-preco {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 992px) {
+  /* EFEITO NAVBAR  */
+
+  .nav-link:after {
+    content: "";
+    height: 0px;
+    width: 0%;
+    display: block;
+  }
+
+  .nav-link:hover:after {
+    height: 4px;
+    width: 100%;
+  }
+
+  /* FOOTER */
+
+  .nav-contato-footer {
+    color: #fff;
+    position: relative;
+    left: 0px;
+  }
+
+  .redes-sociais-footer {
+    position: relative;
+    font-size: 18px;
+    left: -15px;
+  }
+
+  /* PAGINA INDIVIDUAL */
+
+  .filtro-largura,
+  .filtro-preco-largura {
+    position: relative;
+  }
+
+  .filtro-largura {
+    width: 148px;
+    margin-left: 60px;
+  }
+
+  .filtro-preco-largura {
+    width: 170px;
+    margin-right: 34px;
+  }
+
+  .filtro-largura {
+    position: relative;
+    bottom: 30px;
+  }
+
+  /* PAGINA MULHER */
+
+  .filtro-preco-largura {
+    position: relative;
+    top: 45px;
+  }
+
+  .filtro-preco-homem {
+    top: 0px;
+  }
+
+  .titulo-categoria-mulher,
+  .titulo-categoria-homem {
+    text-align: center;
+  }
+
+  .linha-mulher,
+  .linha-homem {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-titulo,
+  .card-link {
+    font-size: 16px;
+  }
+
+  .card-produto {
+    color: #fff;
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+  .card-preco {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  /* FOOTER */
+  .redes-sociais-footer {
+    position: relative;
+    font-size: 18px;
+    bottom: 53px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-contato-footer {
+    color: #fff;
+    position: relative;
+    left: 0px;
+  }
+
+  .redes-sociais-footer {
+    position: relative;
+    font-size: 18px;
+    left: -65px;
+  }
+}
+
+@media (min-width: 1400px) {
+  /* NAVBAR */
+  .nav-logo {
+    font-size: 18px;
+  }
+
+  .valor-total-carrinho-site {
+    font-size: 18px;
+  }
+
+  /* FOOTER */
+  .nav-contato-footer {
+    color: #fff;
+    position: relative;
+    left: 0px;
+  }
+
+  .redes-sociais-footer {
+    position: relative;
+    font-size: 18px;
+    left: -100px;
+  }
+}
